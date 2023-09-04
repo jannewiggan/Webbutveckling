@@ -1,12 +1,40 @@
 body {
 	background-color: green;
 	color: blue;
+	display: grid;
+	grid-template-rows: 80px 80 px auto 50 px;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+nav > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
 }
 
 h1 {
 	text-align: center;
-    font-family: Arial;
-    font-size: 22px;
+	font-family: Arial;
+	font-size: 22px;
 }
 
 .altP {
@@ -15,17 +43,21 @@ h1 {
 }
 
 .Programm {
-    text-align: center;
+	text-align: center;
 }
 
 h2 {
-    text-align: center;
+	text-align: center;
 }
 
 .tankar {
-    text-align: right;
+	text-align: right;
 }
 
 .mig-själv {
-    border: 5px solid black;
+	border: 5px solid black;
+}
+
+a {
+	text-decoration: none;
 }
