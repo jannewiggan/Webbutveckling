@@ -1,8 +1,12 @@
 body {
-	background-color: green;
-	color: blue;
+	background-color: rgb(37, 33, 33);
+	color: rgb(189, 18, 18);
+}
+
+.wrapper{
 	display: grid;
-	grid-template-rows: 80px 80 px auto 50 px;
+	grid-template-columns: auto;
+	grid-template-rows: 80px 80px auto 50px;
 	grid-template-areas:
 		"header"
 		"nav"
@@ -16,11 +20,23 @@ header {
 
 nav {
 	grid-area: nav;
+	background-color: rgb(29, 110, 110);
 }
 
-nav > ul {
+nav>ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav a{
+	text-decoration: none;
 }
 
 main {
@@ -44,7 +60,7 @@ h1 {
 
 .Programm {
 	text-align: center;
-	background-color: aqua;
+	background-color: rgb(52, 61, 61);
 	color: red;
 }
 
