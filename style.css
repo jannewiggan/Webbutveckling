@@ -1,3 +1,78 @@
+body {
+	background-color: rgb(37, 33, 33);
+	color: rgb(255, 255, 255);
+}
+
 .Wrapper{
-    
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 80px 80px auto 50px;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+	background-color: rgb(29, 110, 110);
+	background-image: url("bg-img.png");
+}
+
+nav>ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav a{
+	text-decoration: none;
+	
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+h1 {
+	text-align: center;
+	font-family: Arial;
+	font-size: 22px;
+}
+
+.Programm {
+	text-align: center;
+	background-color: rgb(52, 61, 61);
+	color: rgb(124, 124, 124);
+}
+
+h2 {
+	text-align: center;
+}
+
+.tankar {
+	text-align: right;
+}
+
+.mig-själv {
+	border: 5px solid black;
+}
+
+a {
+	text-decoration: none;
 }
